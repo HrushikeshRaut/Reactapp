@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./table.css";
 
 export default function Table({ data }) {
     const [headers, setHeaders] = useState([]);
@@ -25,7 +26,19 @@ export default function Table({ data }) {
                     {data.map((item, index) => (
                         <tr key={index}>
                             {headers.map((header) => (
-                                <td key={header}>{item[header]}</td>
+                                // <>
+                                // {
+                                //     item[header].search('/(http|https)/') ? 
+                                //     <div>hello</div> :
+                                //     <div>no</div>
+                                // }
+                                // </>
+                                // {item[header].search( '/(http|https)/'))}
+                                // <td key={header}>{item[header]}</td>
+                                <td key={header}>
+                                    {/* <img src='https://b2c-bucket-model-uat.s3.ap-south-1.amazonaws.com/drTestimonial/1700125596678_profileImage.png' /> */}
+                                    {item[header]}
+                                    </td>
                             ))}
                         </tr>
                     ))}

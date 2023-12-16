@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LoginPage from "./pages/loginpage/login";
 import HomePage from "./pages/homepage/home";
 import Navbar from "./Components/navbar";
+// import Image from "./Components/image";
 
 function App() {
   return (
