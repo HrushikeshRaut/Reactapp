@@ -35,7 +35,7 @@ export default function Table({ data }) {
                                 // </>
                                 // {item[header].search( '/(http|https)/'))}
                                 // <td key={header}>{item[header]}</td>
-                                <td key={header}>
+                                    <td key={header}>
                                     {/* <img src='https://b2c-bucket-model-uat.s3.ap-south-1.amazonaws.com/drTestimonial/1700125596678_profileImage.png' /> */}
                                     {item[header]}
                                     </td>

@@ -8,7 +8,7 @@ const initialValue = {
   fav_language: ""
 };
 
-const Form = () => {
+const FormPage = () => {
   const [userdata, setUser] = useState(initialValue);
   const [dropdown, setdropdown] = useState([]);
   const { username, password, email, phoneno } = userdata;
@@ -23,10 +23,9 @@ const Form = () => {
   };
   useEffect(() => {
     // api 
-    setdropdown(["hrllo" , "api"])
+    setdropdown(["hello" , "api"])
   }, [])
   
-
   return (
     <div>
       <form>
@@ -106,20 +105,18 @@ const Form = () => {
                 )) : ""}
               </select>
         </div>
-         
-        
           <span></span>
           <span></span>
           <span></span>
           <span></span>
           {/* <button> */}
-        <a onClick={() => onSubmit()} style={{border:"2px" , padding:"5px"  }}>
+        <button onClick={() => onSubmit()} style={{border:"2px" , padding:"5px"  }}>
           Register
-        </a>
+        </button>
           {/* </button> */}
       </form>
     </div>
   );
 };
 
-export default Form;
+export default FormPage;

@@ -3,7 +3,7 @@ import React from "react";
 
 const LoginPage = () => {
   return (
-      <div id="main">
+    <div id="main">
       <input type=" " placeholder="Username" />
       <br /> <br />
       <input type="text" placeholder="Password" />
